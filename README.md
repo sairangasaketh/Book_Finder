@@ -56,5 +56,5 @@ While fetching data, a loading message is displayed.
 
 
 ## Live Demo 
-(https://book-finder-opal-zeta.vercel.app/)
+https://book-finder-opal-zeta.vercel.app/
 
