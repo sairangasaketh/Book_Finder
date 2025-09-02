@@ -1,73 +1,57 @@
-# Welcome to your Lovable project
+**Book Finder App**
 
-## Project info
+A simple web application that allows users to search for books using the Open Library API. The app displays the book title, author, and first published year in a clean, easy-to-read layout.
 
-**URL**: https://lovable.dev/projects/2e5e7461-371c-458b-a19c-dffa69b182f9
+---
 
-## How can I edit this code?
+**Features**
+- Search for books by **title**.
+- View book details: **title**, **author(s)**, and **first published year**.
+- Simple and clean **card-based layout**.
+- **Responsive design** for mobile and desktop.
+- Handles cases where **no books are found**.
+- Shows a **loading message** while fetching data.
+- **Basic error handling** for API failures.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## **Tech Stack**
+- **Frontend:** React  
+- **Styling:** TailwindCSS  
+- **API:** Open Library Search API ([Documentation](https://openlibrary.org/dev/docs/api/search))  
+- **Package Manager & Runtime:** Bun  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2e5e7461-371c-458b-a19c-dffa69b182f9) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
+## **How It Works**
+1. User types a book title in the **search bar**.  
+2. The app fetches book data from the **Open Library API**.  
+3. Results are displayed as **cards** showing:
+   - **Book title**  
+   - **Author(s)**  
+   - **First published year**  
+4. If no results are found, a **friendly message** is displayed.  
+5. A **loading message** appears while waiting for the API response.  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Setup & Installation
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
 
-Follow these steps:
+2. Install dependencies using Bun:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+    bun install
+3. Start the development server:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+    bun dev
+4. Open your browser and go to http://localhost:3000.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Usage
+Type a book title in the search bar and press enter.
+View the search results displayed as cards with title, author, and publication year.
+If the API does not return results, a “No books found” message appears.
+While fetching data, a loading message is displayed.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2e5e7461-371c-458b-a19c-dffa69b182f9) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
